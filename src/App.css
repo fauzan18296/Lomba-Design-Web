@@ -1,0 +1,105 @@
+/* Import font-family */
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&family=Sofia&display=swap");
+/* Clearing CSS */
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-original: "Jomolhari";
+  --font-family-latin: "Sofia";
+}
+
+.MyBg {
+  background-color: #ffff;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: silver;
+  width: 100%;
+  font-family: var(--font-family-original);
+}
+
+.item1 {
+  background-color: #eee8cf;
+  border-radius: 20px;
+}
+
+.item2 {
+  background-color: #eee8cf;
+  border-radius: 20px;
+}
+
+.item3 {
+  background: #eee8cf;
+  border-radius: 20px;
+}
+
+.Hero-bg {
+  background-image: url("./assets/IMG/Bg/bg1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.luxury {
+  font-family: var(--font-family-original);
+}
+
+.fashion {
+  font-family: var(--font-family-latin);
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: small;
+  }
+
+  .navbar {
+    background-color: #ffff;
+    width: 100%;
+    padding: 0 20%;
+  }
+
+  .section-menu-1 {
+    background-color: none;
+    border-radius: none;
+  }
+
+  .Hero-bg {
+    background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .contain {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: row;
+    padding: 0 1px;
+    letter-spacing: normal;
+    margin: 28px;
+    gap: 36px;
+    text-shadow: 35px #222;
+  }
+
+  .luxury {
+    font-size: 1em;
+  }
+
+  .fashion {
+    font-size: 1em;
+  }
+}
