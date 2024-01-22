@@ -43,9 +43,10 @@ html {
 
 .Hero-bg {
   background-image: url("./assets/IMG/Bg/bg1.svg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
@@ -66,7 +67,6 @@ html {
   .navbar {
     background-color: #ffff;
     width: 100%;
-    padding: 0 20%;
   }
 
   .section-menu-1 {
@@ -76,30 +76,34 @@ html {
 
   .Hero-bg {
     background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
   }
 
   .contain {
     display: flex;
     align-items: center;
-    justify-self: center;
-    flex-direction: row;
-    padding: 0 1px;
+    justify-content: center;
+    inset: 0;
     letter-spacing: normal;
-    margin: 28px;
-    gap: 36px;
-    text-shadow: 35px #222;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .luxury {
-    font-size: 1em;
+    text-shadow: #222;
+    font-size: 2em;
   }
 
   .fashion {
-    font-size: 1em;
+    text-shadow: #222;
+    font-size: 2em;
   }
 }
