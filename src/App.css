@@ -7,10 +7,10 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Jomolhari";
 }
 
 :root {
-  --font-family-original: "Jomolhari";
   --font-family-latin: "Sofia";
 }
 
@@ -23,7 +23,6 @@ html {
 .navbar {
   background-color: silver;
   width: 100%;
-  font-family: var(--font-family-original);
 }
 
 .item1 {
@@ -51,12 +50,18 @@ html {
   height: 100vh;
 }
 
-.luxury {
-  font-family: var(--font-family-original);
-}
-
 .fashion {
   font-family: var(--font-family-latin);
+}
+
+.list-category {
+  letter-spacing: 2px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  width: 366px;
 }
 
 @media screen and (max-width: 576px) {
