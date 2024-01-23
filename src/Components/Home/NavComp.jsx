@@ -7,6 +7,7 @@ import {
   Col,
   InputGroup,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const Navigation = () => {
@@ -24,10 +25,18 @@ const Navigation = () => {
           <Navbar.Collapse id="navbar-collapse-id">
             <Nav className="fs-5 d-flex align-items-center justify-content-center section-menu-1">
               <Nav.Item className="item1 mx-2 px-2 my-2">
-                <Nav.Link eventKey="link-event-key">Catalog</Nav.Link>
+                <Nav.Link as={Link} to="/catalog" eventKey="link-event-key">
+                  Catalog
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item className="item2 mx-2 px-2 my-2">
-                <Nav.Link eventKey="link-event-key">Custom Project</Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/customproject"
+                  eventKey="link-event-key"
+                >
+                  Custom Project
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
@@ -35,13 +44,19 @@ const Navigation = () => {
         <Navbar.Collapse id="navbar-collapse-id">
           <Nav className="fs-5 d-flex justify-content-center align-items-center section-menu-2">
             <Nav.Item className="mx-2">
-              <Nav.Link eventKey="link-event-key">Home</Nav.Link>
+              <Nav.Link as={Link} to="/" eventKey="link-event-key">
+                Home
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-2">
-              <Nav.Link eventKey="link-event-key">About</Nav.Link>
+              <Nav.Link as={Link} to="/about" eventKey="link-event-key">
+                About
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-2">
-              <Nav.Link eventKey="link-event-key">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/contact" eventKey="link-event-key">
+                Contact
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

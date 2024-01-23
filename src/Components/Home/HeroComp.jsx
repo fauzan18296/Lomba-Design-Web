@@ -1,5 +1,9 @@
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Typewriter } from "react-simple-typewriter";
 const HeroSection = () => {
+  const [changeText, setChangeText] = useState(["Luxury", "ASAF"]);
+
   return (
     <div className="Hero-bg d-flex justify-content-center align-items-center">
       <Container
@@ -18,7 +22,14 @@ const HeroSection = () => {
                 fontSize: "1.4em",
               }}
             >
-              <p className="luxury">Luxury</p>
+              <p className="luxury">
+                <Typewriter
+                  words={changeText}
+                  loop={false}
+                  cursorStyle={"_"}
+                  cursor
+                />
+              </p>
             </div>
             <div
               className="text-capitalize ms-5 fashion"
