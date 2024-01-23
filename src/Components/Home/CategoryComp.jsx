@@ -4,10 +4,10 @@ import Men from "../../assets/IMG/Men/Imgmen1 1.svg";
 import Woman from "../../assets/IMG/Woman/Imgwoman1 1.svg";
 const Category = () => {
   return (
-    <div className="my-2 list-category d-flex justify-content-center align-items-center">
-      <div className="fs-1 fw-semibold text-center">Category</div>
-      <Container className="d-flex justify-content-center align-items-center py-3">
-        <Row className="d-flex justify-content-center align-items-center row-cols-lg-3 g-4">
+    <div className="py-1 list-category d-flex justify-content-center align-items-center px-4">
+      <div className="fs-1 fw-semibold">Category</div>
+      <Container className="d-flex justify-content-center align-items-center py-4 ">
+        <Row className="d-flex justify-content-center align-items-center row-cols-lg-3 g-5">
           <Col className="d-flex justify-content-center">
             <img src={Kids} alt="Kids" />
           </Col>
