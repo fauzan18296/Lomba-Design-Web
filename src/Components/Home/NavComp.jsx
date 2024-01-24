@@ -15,7 +15,8 @@ const Navigation = () => {
     <div>
       <Navbar
         expand="lg"
-        className="py-2 px-2 d-flex align-items-center justify-content-center navbar"
+        className="bg-dark w-full py-1 px-3 d-flex align-items-center justify-content-center navbar"
+        variant="dark"
       >
         <Container className="mx-1">
           <Navbar.Brand className="logo-brand fw-semibold fs-3 ">
