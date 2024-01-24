@@ -7,66 +7,96 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Jomolhari";
 }
 
 :root {
-  --font-family-original: "Jomolhari";
   --font-family-latin: "Sofia";
 }
 
 .MyBg {
   background-color: #ffff;
+  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
 
 .navbar {
-  background-color: silver;
-  width: 100%;
-  font-family: var(--font-family-original);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
 }
 
-.item1 {
-  background-color: #eee8cf;
-  border-radius: 20px;
-}
-
-.item2 {
-  background-color: #eee8cf;
-  border-radius: 20px;
-}
-
-.item3 {
-  background: #eee8cf;
-  border-radius: 20px;
-}
-
-.Hero-bg {
+.Hero-bg1 {
   background-image: url("./assets/IMG/Bg/bg1.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.Hero-bg2 {
+  background-image: url("./assets/IMG/Bg/bg2.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.Hero-bg3 {
+  background-image: url("./assets/IMG/Bg/bg3.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   max-width: 100%;
   width: 100%;
   height: 100vh;
 }
 
 .luxury {
-  font-family: var(--font-family-original);
+  text-shadow: #222;
 }
 
 .fashion {
   font-family: var(--font-family-latin);
 }
 
+.list-category {
+  letter-spacing: 2px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  width: 366px;
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: large;
+  }
+}
+
 @media screen and (max-width: 576px) {
   html {
-    font-size: small;
+    font-size: x-small;
   }
 
   .navbar {
-    background-color: #ffff;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
   }
 
   .section-menu-1 {
@@ -74,11 +104,40 @@ html {
     border-radius: none;
   }
 
-  .Hero-bg {
+  .Hero-bg1 {
     background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Hero-bg2 {
+    background-image: url("./assets/IMG/Bg/bg2-media-hp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Hero-bg3 {
+    background-image: url("./assets/IMG/Bg/bg3-media-hp.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,21 +148,24 @@ html {
 
   .contain {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
     inset: 0;
     letter-spacing: normal;
     flex-direction: column;
+    text-shadow: 500px #222;
     gap: 10px;
   }
 
   .luxury {
-    text-shadow: #222;
     font-size: 2em;
   }
 
   .fashion {
-    text-shadow: #222;
     font-size: 2em;
+  }
+
+  img {
+    padding: 0 20px;
   }
 }
