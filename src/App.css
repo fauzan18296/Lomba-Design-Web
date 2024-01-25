@@ -82,13 +82,13 @@ img {
 
 @media screen and (max-width: 1366px) {
   html {
-    font-size: large;
+    font-size: x-large;
   }
 }
 
 @media screen and (max-width: 576px) {
   html {
-    font-size: x-small;
+    font-size: small;
   }
 
   .navbar {
@@ -99,10 +99,7 @@ img {
     z-index: 9999;
   }
 
-  .section-menu-1 {
-    background-color: none;
-    border-radius: none;
-  }
+ 
 
   .Hero-bg1 {
     background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
@@ -165,4 +162,7 @@ img {
     font-size: 2em;
   }
 
+  img {
+  width: 300px;
+  }
 }
