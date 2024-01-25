@@ -1,6 +1,12 @@
+import Navbar from "../Components/Home/NavComp";
 import CustomProjectContent from "../Components/Content/CustomProjectContent";
 
 const CustomProject = () => {
-  return <CustomProjectContent />;
+  return (
+    <>
+      <Navbar />
+      <CustomProjectContent />
+    </>
+  );
 };
 export default CustomProject;
