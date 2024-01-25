@@ -82,7 +82,7 @@ img {
 
 @media screen and (max-width: 1366px) {
   html {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -99,14 +99,11 @@ img {
     z-index: 9999;
   }
 
- 
-
   .Hero-bg1 {
     background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +117,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +130,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
