@@ -1,4 +1,4 @@
 {
   "trailingSlash": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/App.jsx" }]
 }
