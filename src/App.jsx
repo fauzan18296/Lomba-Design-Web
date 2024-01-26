@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -20,7 +19,6 @@ function App() {
           <Route path="/customproject" element={<CustomProject />} />
         </Routes>
       </Router>
-      <SpeedInsights />
       {/* End Intro */}
     </div>
   );
