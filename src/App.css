@@ -18,7 +18,7 @@ html {
 .MyBg {
   background-color: #ffff;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -36,7 +36,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -47,7 +47,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -58,7 +58,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -154,7 +154,7 @@ img {
 /* Contact page */
 .contact-page {
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-height: 100vh;
   position: relative;
@@ -189,7 +189,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -202,7 +202,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -215,7 +215,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
