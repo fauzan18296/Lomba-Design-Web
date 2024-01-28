@@ -15,6 +15,7 @@ const Navigation = () => {
     <div>
       <Navbar
         expand="lg"
+        fixed="top"
         className="bg-dark w-full py-1 px-3 d-flex align-items-center justify-content-center navbar"
         variant="dark"
       >
