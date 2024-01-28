@@ -14,7 +14,7 @@ html {
   --font-family-latin: "Sofia";
 }
 
-/* Home Page */
+/* Home page */
 .MyBg {
   background-color: #ffff;
   max-width: 100%;
@@ -26,7 +26,6 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
   z-index: 9999;
 }
 
@@ -84,7 +83,7 @@ img {
 }
 /* Home end */
 
-/* About Page */
+/* About page */
 .about-page {
   background-color: #ffff;
   width: 100vw;
@@ -112,32 +111,55 @@ img {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: relative;
-  animation: img-animasi 2s;
+  animation: img-animasi-1 2s;
   animation-fill-mode: both;
   animation-delay: 2s;
 }
 
 .img2 img {
-  width: inherit;
+  width: 300px;
   border: 1px solid #222;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: inherit;
-  animation: img-animasi 2s;
+  animation: img-animasi-2 3s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
-@keyframes img-animasi {
+@keyframes img-animasi-1 {
   0% {
     transform: translateY(-100vmax);
+    opacity: -1;
   }
   50% {
     transform: translateY(10%);
+    opacity: -1;
+  }
+}
+
+@keyframes img-animasi-2 {
+  0% {
+    transform: translateY(-100vmax);
+    opacity: -1;
+  }
+  70% {
+    transform: translateY(12%);
+    opacity: -1;
   }
 }
 
 /* About end */
+
+/* Contact page */
+.contact-page {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+/* Contact end */
 
 @media screen and (max-width: 1366px) {
   html {
@@ -147,14 +169,14 @@ img {
 
 @media screen and (max-width: 576px) {
   html {
-    font-size: x-small;
+    font-size: small;
   }
 
+  /* home-page-media-hp */
   .navbar {
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
     z-index: 9999;
   }
 
@@ -167,7 +189,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -180,7 +202,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -193,7 +215,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -216,6 +238,10 @@ img {
     font-size: 2em;
   }
 
+  /* home-page-media-hp-end */
+
+  /* about-page-media-hp */
+
   .about-page {
     position: relative;
     padding-top: 10%;
@@ -227,7 +253,7 @@ img {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     inset: 0;
-    animation: img-animasi 2s;
+    animation: img-animasi-1 2s;
     animation-fill-mode: both;
     animation-delay: 2s;
   }
@@ -238,17 +264,31 @@ img {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: inherit;
-    animation: img-animasi 2s;
+    animation: img-animasi-2 3s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
 
-  @keyframes img-animasi {
+  @keyframes img-animasi-1 {
     0% {
       transform: translateX(-100vmax);
+      opacity: -1;
     }
     50% {
       transform: translateX(30%);
+      opacity: -1;
     }
   }
+
+  @keyframes img-animasi-2 {
+    0% {
+      transform: translateY(-100vmax);
+      opacity: -1;
+    }
+    70% {
+      transform: translateY(12%);
+      opacity: -1;
+    }
+  }
+  /* about-page-media-hp end */
 }

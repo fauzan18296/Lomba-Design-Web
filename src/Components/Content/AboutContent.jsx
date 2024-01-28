@@ -8,7 +8,7 @@ const AboutContent = () => {
   const changeText2 = [" Abiyan", " Student"];
 
   return (
-    <div className="d-flex justify-content-center align-items-center  ">
+    <div>
       <Container className="about-page d-flex justify-content-center align-items-center">
         <Row className="about d-flex justify-content-center align-items-center pt-5 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
           <Col className="fs-5">
