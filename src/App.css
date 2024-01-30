@@ -27,7 +27,6 @@ html {
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 9999;
 }
 
@@ -57,6 +56,7 @@ html {
   max-width: 100%;
   width: 100%;
   height: 100vh;
+  max-width: 100%;
 }
 
 .Hero-bg3 {
@@ -122,9 +122,9 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: relative;
-  animation: img-animasi-1 2s;
+  animation: img-animasi-1 3s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .img2 img {
@@ -133,30 +133,30 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: inherit;
-  animation: img-animasi-2 3s;
+  animation: img-animasi-2 4s;
   animation-fill-mode: both;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 
 @keyframes img-animasi-1 {
   0% {
-    transform: translateY(-100vmax);
-    opacity: -1;
+    transform: translateY(-100vmax) rotateY(90deg);
+    opacity: 0;
   }
   50% {
-    transform: translateY(10%);
+    transform: translateY(10%) rotateY(180deg);
     opacity: -1;
   }
 }
 
 @keyframes img-animasi-2 {
   0% {
-    transform: translateY(-100vmax);
-    opacity: -1;
+    transform: translateY(-100vmax) rotateY(90deg);
+    opacity: 0;
   }
   70% {
-    transform: translateY(12%);
-    opacity: -1;
+    transform: translateY(12%) rotateY(180deg);
+    opacity: 0;
   }
 }
 
@@ -169,6 +169,10 @@ html {
   height: 100vh;
   min-height: 100vh;
   position: relative;
+}
+
+.contact-page :where(.input-control) {
+  border: 2px solid #222;
 }
 /* Contact end */
 
@@ -201,6 +205,7 @@ html {
     align-items: center;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
   }
 
   .Hero-bg2 {
@@ -213,6 +218,7 @@ html {
     align-items: center;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
   }
 
   .Hero-bg3 {
@@ -225,6 +231,7 @@ html {
     align-items: center;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
   }
 
   .contain {
@@ -235,7 +242,7 @@ html {
     letter-spacing: normal;
     flex-direction: column;
     text-shadow: 500px #222;
-    gap: 9px;
+    gap: 10px;
   }
 
   .luxury {
@@ -265,9 +272,9 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     inset: 0;
-    animation: img-animasi-1 2s;
+    animation: img-animasi-1 3s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
 
   .img2 img {
@@ -276,30 +283,30 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: inherit;
-    animation: img-animasi-2 3s;
+    animation: img-animasi-2 4s;
     animation-fill-mode: both;
-    animation-delay: 3s;
+    animation-delay: 4s;
   }
 
   @keyframes img-animasi-1 {
     0% {
-      transform: translateX(-100vmax);
-      opacity: -1;
+      transform: translateX(-100vmax) rotateX(90deg);
+      opacity: 0;
     }
     50% {
-      transform: translateX(30%);
-      opacity: -1;
+      transform: translateX(30%) rotateX(180deg);
+      opacity: 0;
     }
   }
 
   @keyframes img-animasi-2 {
     0% {
-      transform: translateY(-100vmax);
-      opacity: -1;
+      transform: translateX(-100vmax) rotateX(90deg);
+      opacity: 0;
     }
     70% {
-      transform: translateY(12%);
-      opacity: -1;
+      transform: translateX(12%) rotateX(180deg);
+      opacity: 0;
     }
   }
   /* about-page-media-hp end */
