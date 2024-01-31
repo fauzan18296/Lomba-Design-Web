@@ -14,9 +14,11 @@ html {
   --font-family-latin: "Sofia";
 }
 
+/* Home page */
 .MyBg {
   background-color: #ffff;
   max-width: 100%;
+  min-height: 100vh;
   width: 100%;
   height: 100vh;
 }
@@ -25,7 +27,6 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
   z-index: 9999;
 }
 
@@ -35,6 +36,9 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   width: 100%;
   height: 100vh;
@@ -46,9 +50,13 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   width: 100%;
   height: 100vh;
+  max-width: 100%;
 }
 
 .Hero-bg3 {
@@ -57,6 +65,9 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   width: 100%;
   height: 100vh;
@@ -64,10 +75,12 @@ html {
 
 .luxury {
   text-shadow: #222;
+  font-size: 5vmax;
 }
 
 .fashion {
   font-family: var(--font-family-latin);
+  font-size: 5vmax;
 }
 
 .list-category {
@@ -76,13 +89,104 @@ html {
   min-height: 100vh;
 }
 
-img {
+.list-category img {
   width: 366px;
 }
+/* Home end */
+
+/* About page */
+.about-page {
+  background-color: #ffff;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.about {
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  min-height: inherit;
+  position: inherit;
+}
+
+.about span {
+  color: #9c881e;
+}
+
+.img1 img {
+  width: 300px;
+  border: 1px solid #222;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  animation: img-animasi-1 4s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.img2 img {
+  width: 300px;
+  border: 1px solid #222;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: inherit;
+  animation: img-animasi-2 5s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+
+@keyframes img-animasi-1 {
+  0% {
+    transform: translateY(-100vmax) rotateY(-90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10%) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes img-animasi-2 {
+  0% {
+    transform: translateY(-100vmax) rotateY(-90deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(12%) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+/* About end */
+
+/* Contact page */
+.contact-page {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.contact-page .input-control {
+  border: 2px solid #222;
+  box-shadow: none;
+}
+
+.contact-page .input-suggestion {
+  border: 2px solid #222;
+  width: 100%;
+  height: 200px;
+  box-shadow: none;
+}
+/* Contact end */
 
 @media screen and (max-width: 1366px) {
   html {
-    font-size: x-large;
+    font-size: large;
   }
 }
 
@@ -91,22 +195,19 @@ img {
     font-size: small;
   }
 
+  /* home-page-media-hp */
   .navbar {
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
     z-index: 9999;
   }
-
- 
 
   .Hero-bg1 {
     background-image: url("./assets/IMG/Bg/bg1-media-hp.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +221,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +234,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,14 +254,68 @@ img {
   }
 
   .luxury {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .fashion {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
-  img {
+  .list-category img {
     width: 300px;
   }
+
+  /* home-page-media-hp-end */
+
+  /* about-page-media-hp */
+
+  .about-page {
+    position: relative;
+    padding-top: 10%;
+  }
+
+  .img1 img {
+    width: 280px;
+    border: 1px solid #222;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    inset: 0;
+    animation: img-animasi-1 4s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+  }
+
+  .img2 img {
+    width: 280px;
+    border: 1px solid #222;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: inherit;
+    animation: img-animasi-2 5s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+  }
+
+  @keyframes img-animasi-1 {
+    0% {
+      transform: translateX(-100vmax) rotateX(-90deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(30%) rotateX(180deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes img-animasi-2 {
+    0% {
+      transform: translateX(-100vmax) rotateX(-90deg);
+      opacity: 0;
+    }
+    70% {
+      transform: translateX(12%) rotateX(180deg);
+      opacity: 0;
+    }
+  }
+  /* about-page-media-hp end */
 }
