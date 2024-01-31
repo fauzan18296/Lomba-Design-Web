@@ -1,92 +1,55 @@
-import {
-  Container,
-  Navbar,
-  Nav,
-  Form,
-  Row,
-  Col,
-  InputGroup,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-
-
+import { Container, Row, Col, Form, InputGroup } from "react-bootstrap";
 
 const ContactContent = () => {
-  return(
+  return (
     <div>
-       <Navbar
-    expand="lg"
-    className="bg-dark w-full py-1 px-3 d-flex align-items-center justify-content-center navbar"
-    variant="dark"
-  >
-    <Container className="mx-1">
-      <Navbar.Brand className="logo-brand fw-semibold fs-3 ">
-        ASAF
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbar-collapse-id" />
-      <Navbar.Collapse id="navbar-collapse-id">
-        <Nav className="fs-5 d-flex align-items-center justify-content-center section-menu-1">
-          <Nav.Item className="item1 mx-2 px-2 my-2">
-            <Nav.Link as={Link} to="/catalog" eventKey="link-event-key">
-              Catalog
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="item2 mx-2 px-2 my-2">
-            <Nav.Link
-              as={Link}
-              to="/customproject"
-              eventKey="link-event-key"
-            >
-              Custom Project
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-    <Navbar.Collapse id="navbar-collapse-id">
-      <Nav className="fs-5 d-flex justify-content-center align-items-center section-menu-2">
-        <Nav.Item className="mx-2">
-          <Nav.Link as={Link} to="/" eventKey="link-event-key">
-            Home
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item className="mx-2">
-          <Nav.Link as={Link} to="/about" eventKey="link-event-key">
-            About
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item className="mx-2">
-          <Nav.Link as={Link} to="/contact" eventKey="link-event-key">
-            Contact
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </Navbar.Collapse>
-    <Navbar.Collapse id="navbar-collapse-id">
-      <Form inline>
-        <InputGroup>
-          <Form.Control
-            type="Search"
-            placeholder="Search"
-            className="d-flex align-items-center"
-          />
-          <InputGroup.Text>
-            <button
-              style={{
-                border: "none",
-              }}
-            >
-              <FontAwesomeIcon icon={faMagnifyingGlass} size="md" />
-            </button>
-          </InputGroup.Text>
-        </InputGroup>
-      </Form>
-    </Navbar.Collapse>
-  </Navbar> 
-  <h1 className="m-5">Page Contact</h1>
-    </div> 
-    );
+      <Container className="contact-page d-flex justify-content-center align-items-center">
+        <Row className="d-flex justify-content-center align-items-center mx-3 my-3">
+          <Col className="mx-3 my-3 w-full">
+            <Form inline>
+              <InputGroup
+                size="lg"
+                className="d-flex justify-content-center align-items-center my-3 "
+              >
+                <Form.Label className="d-flex align-items-center pe-4 fs-4 fw-semibold">
+                  <div>Username:</div>
+                  <Form.Control
+                    type="text"
+                    placeholder="username"
+                    className="d-flex align-items-center input-control text-capitalize ms-3 "
+                  />
+                </Form.Label>
+              </InputGroup>
+
+              <InputGroup
+                size="xl"
+                className="d-flex justify-content-center align-items-center my-3"
+              >
+                <Form.Label className="d-flex align-items-center pe-4 fs-4 fw-semibold">
+                  <div>Password:</div>
+                  <Form.Control
+                    type="password"
+                    placeholder="password"
+                    className="d-flex align-items-center input-control text-capitalize ms-3"
+                  />
+                </Form.Label>
+              </InputGroup>
+
+              <InputGroup size="lg" className="d-block">
+                <Form.Label className="d-flex pe-4  fs-4 fw-semibold">
+                  <div>Suggestion:</div>
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="suggestion"
+                  className="d-flex px-2 justify-content-center input-suggestion text-capitalize"
+                />
+              </InputGroup>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 };
 export default ContactContent;
