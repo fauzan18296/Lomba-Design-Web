@@ -122,7 +122,7 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: relative;
-  animation: img-animasi-1 3s;
+  animation: img-animasi-1 4s;
   animation-fill-mode: both;
   animation-delay: 3s;
 }
@@ -133,25 +133,25 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: inherit;
-  animation: img-animasi-2 4s;
+  animation: img-animasi-2 5s;
   animation-fill-mode: both;
   animation-delay: 4s;
 }
 
 @keyframes img-animasi-1 {
   0% {
-    transform: translateY(-100vmax) rotateY(90deg);
+    transform: translateY(-100vmax) rotateY(-90deg);
     opacity: 0;
   }
   50% {
     transform: translateY(10%) rotateY(180deg);
-    opacity: -1;
+    opacity: 0;
   }
 }
 
 @keyframes img-animasi-2 {
   0% {
-    transform: translateY(-100vmax) rotateY(90deg);
+    transform: translateY(-100vmax) rotateY(-90deg);
     opacity: 0;
   }
   70% {
@@ -171,8 +171,16 @@ html {
   position: relative;
 }
 
-.contact-page :where(.input-control) {
+.contact-page .input-control {
   border: 2px solid #222;
+  box-shadow: none;
+}
+
+.contact-page .input-suggestion {
+  border: 2px solid #222;
+  width: 100%;
+  height: 200px;
+  box-shadow: none;
 }
 /* Contact end */
 
@@ -272,7 +280,7 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     inset: 0;
-    animation: img-animasi-1 3s;
+    animation: img-animasi-1 4s;
     animation-fill-mode: both;
     animation-delay: 3s;
   }
@@ -283,14 +291,14 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: inherit;
-    animation: img-animasi-2 4s;
+    animation: img-animasi-2 5s;
     animation-fill-mode: both;
     animation-delay: 4s;
   }
 
   @keyframes img-animasi-1 {
     0% {
-      transform: translateX(-100vmax) rotateX(90deg);
+      transform: translateX(-100vmax) rotateX(-90deg);
       opacity: 0;
     }
     50% {
@@ -301,7 +309,7 @@ html {
 
   @keyframes img-animasi-2 {
     0% {
-      transform: translateX(-100vmax) rotateX(90deg);
+      transform: translateX(-100vmax) rotateX(-90deg);
       opacity: 0;
     }
     70% {
