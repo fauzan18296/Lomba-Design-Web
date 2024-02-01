@@ -10,14 +10,8 @@ const HeroSection = () => {
   };
 
   return (
-    <Carousel
-      activeIndex={index}
-      onSelect={handleSelect}
-      data-bs-theme="dark"
-      interval={500}
-      fade
-    >
-      <Carousel.Item interval={1000}>
+    <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark">
+      <Carousel.Item interval={800}>
         <div className="Hero-bg1 d-flex justify-content-center align-items-center">
           <Container
             className="fs-1 d-flex align-items-center"

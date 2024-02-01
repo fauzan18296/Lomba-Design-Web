@@ -122,9 +122,9 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: relative;
-  animation: img-animasi-1 4s;
+  animation: img-animasi-1 3s;
   animation-fill-mode: both;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .img2 img {
@@ -133,30 +133,30 @@ html {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: inherit;
-  animation: img-animasi-2 5s;
+  animation: img-animasi-2 4s;
   animation-fill-mode: both;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 @keyframes img-animasi-1 {
   0% {
     transform: translateY(-100vmax) rotateY(-90deg);
-    opacity: 0;
+    opacity: -2;
   }
   50% {
     transform: translateY(10%) rotateY(180deg);
-    opacity: 0;
+    opacity: -2;
   }
 }
 
 @keyframes img-animasi-2 {
   0% {
     transform: translateY(-100vmax) rotateY(-90deg);
-    opacity: 0;
+    opacity: -2;
   }
   70% {
     transform: translateY(12%) rotateY(180deg);
-    opacity: 0;
+    opacity: -2;
   }
 }
 
@@ -208,6 +208,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,6 +222,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +236,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,21 +247,20 @@ html {
 
   .contain {
     display: flex;
-    align-self: center;
-    justify-self: center;
-    inset: 0;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 100% #222;
     letter-spacing: normal;
     flex-direction: column;
-    text-shadow: 500px #222;
     gap: 10px;
   }
 
-  .luxury {
-    font-size: 1.2em;
+  .contain .luxury {
+    font-size: 1.3em;
   }
 
-  .fashion {
-    font-size: 1.2em;
+  .contain .fashion {
+    font-size: 1.3em;
   }
 
   .list-category img {
@@ -280,9 +282,9 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     inset: 0;
-    animation: img-animasi-1 4s;
+    animation: img-animasi-1 3s;
     animation-fill-mode: both;
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
 
   .img2 img {
@@ -291,30 +293,30 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: inherit;
-    animation: img-animasi-2 5s;
+    animation: img-animasi-2 4s;
     animation-fill-mode: both;
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
 
   @keyframes img-animasi-1 {
     0% {
       transform: translateX(-100vmax) rotateX(-90deg);
-      opacity: 0;
+      opacity: -2;
     }
     50% {
       transform: translateX(30%) rotateX(180deg);
-      opacity: 0;
+      opacity: -2;
     }
   }
 
   @keyframes img-animasi-2 {
     0% {
       transform: translateX(-100vmax) rotateX(-90deg);
-      opacity: 0;
+      opacity: -2;
     }
     70% {
       transform: translateX(12%) rotateX(180deg);
-      opacity: 0;
+      opacity: -2;
     }
   }
   /* about-page-media-hp end */
