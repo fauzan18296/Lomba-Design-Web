@@ -20,8 +20,8 @@ const Navigation = () => {
         variant="dark"
       >
         <Container className="mx-1">
-          <Navbar.Brand className="logo-brand fw-semibold fs-3 ">
-            ASAF
+          <Navbar.Brand className="logo-brand fw-semibold fs-3 text-uppercase ">
+            asaf
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-collapse-id" />
           <Navbar.Collapse id="navbar-collapse-id">
