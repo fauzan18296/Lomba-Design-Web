@@ -80,7 +80,7 @@ html {
 
 .fashion {
   font-family: var(--font-family-latin);
-  font-size: 5vmax;
+  font-size: 6vmax;
 }
 
 .list-category {
@@ -188,6 +188,27 @@ html {
   html {
     font-size: large;
   }
+
+  .list-category img {
+    animation: zoomInOnHover 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+  }
+
+  @keyframes zoomInOnHover {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    40% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.1;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -265,6 +286,7 @@ html {
 
   .list-category img {
     width: 300px;
+    transition: all 2s ease-in-out;
   }
 
   /* home-page-media-hp-end */

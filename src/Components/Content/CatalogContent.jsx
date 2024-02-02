@@ -1,3 +1,5 @@
+import { Container, Col, Row } from "react-bootstrap";
+
 const CatalogContent = () => {
   return (
     <div>

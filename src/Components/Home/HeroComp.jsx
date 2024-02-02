@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import { Typewriter } from "react-simple-typewriter";
 const HeroSection = () => {
-  const [changeText, setChangeText] = useState(["Luxury", "Various"]);
+  const changeText = [" Luxury", "Various"];
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
