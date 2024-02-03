@@ -160,6 +160,11 @@ html {
   }
 }
 
+.about-page .links .link {
+  display: inline-block;
+  color: #222;
+}
+
 /* About end */
 
 /* Contact page */
@@ -183,6 +188,15 @@ html {
   box-shadow: none;
 }
 /* Contact end */
+
+/* Catalog page */
+.catalog-content {
+  background-color: #ffff;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+/* Catalog end */
 
 @media screen and (max-width: 1366px) {
   html {
@@ -286,7 +300,24 @@ html {
 
   .list-category img {
     width: 300px;
-    transition: all 2s ease-in-out;
+    animation: zoomInOnHover 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+  }
+
+  @keyframes zoomInOnHover {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    40% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.1;
+    }
   }
 
   /* home-page-media-hp-end */
