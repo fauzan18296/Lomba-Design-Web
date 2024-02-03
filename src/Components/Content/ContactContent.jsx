@@ -59,7 +59,7 @@ const ContactContent = () => {
                 <Form.Control
                   type="text"
                   placeholder="suggestion"
-                  className="d-flex px-2  align-items-center input-suggestion text-capitalize"
+                  className="d-flex px-2 input-suggestion text-capitalize"
                 />
               </InputGroup>
             </Form>
