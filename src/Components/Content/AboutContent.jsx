@@ -6,12 +6,18 @@ import {
   faSquareInstagram,
   faSquareFacebook,
   faLinkedin,
+  faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import img1 from "../../assets/IMG/Page-about/img1 1.svg";
 import img2 from "../../assets/IMG/Page-about/img2 1.svg";
 
 const AboutContent = () => {
-  const changeText1 = [" Fauzan", " Student", " Web Developer"];
+  const changeText1 = [
+    " Fauzan",
+    " Student",
+    " Web Developer",
+    " Front-End Developer",
+  ];
   const changeText2 = [" Abiyan", " Student", " Web Designer"];
 
   return (
@@ -59,9 +65,13 @@ const AboutContent = () => {
 
               <a
                 href="https://www.linkedin.com/in/ahmad-fauzan-b96ba9238/"
-                className="link"
+                className="pe-2 link"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+              </a>
+
+              <a href="https://github.com/fauzan18296" className="link">
+                <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
               </a>
             </div>
           </Col>
