@@ -27,7 +27,7 @@ const AboutContent = () => {
           <Col className="fs-5">
             <div className="fs-2 fw-bold ">
               Hello, I'm a
-              <span>
+              <span className="typing-animation">
                 <Typewriter
                   words={changeText1}
                   loop={false}
@@ -46,32 +46,42 @@ const AboutContent = () => {
 
             <div className="links d-flex align-items-center ">
               <a href="https://twitter.com/fauzan18296" className=" pe-2 link">
-                <FontAwesomeIcon icon={faSquareXTwitter} size="2xl" />
+                <div className="icon-link1">
+                  <FontAwesomeIcon icon={faSquareXTwitter} size="2xl" />
+                </div>
               </a>
 
               <a
                 href="https://web.facebook.com/profile.php?id=100034570607256"
                 className="pe-2 link"
               >
-                <FontAwesomeIcon icon={faSquareFacebook} size="2xl" />
+                <div className="icon-link2">
+                  <FontAwesomeIcon icon={faSquareFacebook} size="2xl" />
+                </div>
               </a>
 
               <a
                 href="https://www.instagram.com/ahd_fauzan18/?next=%2F&hl=id"
                 className="pe-2 link"
               >
-                <FontAwesomeIcon icon={faSquareInstagram} size="2xl" />
+                <div className="icon-link3">
+                  <FontAwesomeIcon icon={faSquareInstagram} size="2xl" />
+                </div>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/ahmad-fauzan-b96ba9238/"
                 className="pe-2 link"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                <div className="icon-link4">
+                  <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                </div>
               </a>
 
               <a href="https://github.com/fauzan18296" className="link">
-                <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
+                <div className="icon-link5">
+                  <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
+                </div>
               </a>
             </div>
           </Col>
@@ -83,7 +93,7 @@ const AboutContent = () => {
           <Col className="fs-5 pt-5">
             <div className="fs-2 fw-bold">
               Hello, I'm a
-              <span>
+              <span className="typing-animation">
                 <Typewriter
                   words={changeText2}
                   loop={false}
@@ -92,12 +102,39 @@ const AboutContent = () => {
                 />
               </span>
             </div>
+
             <div>
               <p>
                 Perkenalkan nama saya Abiyan samawi al-kindi, saya adalah
                 seorang siswa dari SMAN 11.Di lomba ini tugas bagian saya adalah
                 membuat design UI nya, salam kenal ya!
               </p>
+            </div>
+
+            <div className="links d-flex align-items-center ">
+              <a
+                href="https://www.instagram.com/abiyanssa/"
+                className="pe-2 link"
+              >
+                <div className="icon-link6">
+                  <FontAwesomeIcon icon={faSquareInstagram} size="2xl" />
+                </div>
+              </a>
+
+              <a
+                href="https://www.facebook.com/abiyan.alkindi?mibextid=9R9pXO"
+                className="pe-2 link"
+              >
+                <div className="icon-link7">
+                  <FontAwesomeIcon icon={faSquareFacebook} size="2xl" />
+                </div>
+              </a>
+
+              <a href="https://github.com/Abiyansa" className="link">
+                <div className="icon-link8">
+                  <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
+                </div>
+              </a>
             </div>
           </Col>
           <div className="img2 pt-5 pb-5">

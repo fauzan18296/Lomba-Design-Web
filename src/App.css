@@ -112,7 +112,7 @@ html {
   position: inherit;
 }
 
-.about span {
+.about .typing-animation {
   color: #9c881e;
 }
 
@@ -165,6 +165,62 @@ html {
   color: #222;
 }
 
+.about-page .links .icon-link1 {
+  animation: icon-link-animasi 3s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+.about-page .links .icon-link2 {
+  animation: icon-link-animasi 4s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.about-page .links .icon-link3 {
+  animation: icon-link-animasi 5s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.about-page .links .icon-link4 {
+  animation: icon-link-animasi 6s;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+
+.about-page .links .icon-link5 {
+  animation: icon-link-animasi 7s;
+  animation-fill-mode: both;
+  animation-delay: 6s;
+}
+
+.about-page .links .icon-link6 {
+  animation: icon-link-animasi 6s;
+  animation-fill-mode: both;
+  animation-delay: 1.8s;
+}
+
+.about-page .links .icon-link7 {
+  animation: icon-link-animasi 7s;
+  animation-fill-mode: both;
+  animation-delay: 1.9s;
+}
+
+.about-page .links .icon-link8 {
+  animation: icon-link-animasi 8s;
+  animation-fill-mode: both;
+  animation-delay: 2.9s;
+}
+
+@keyframes icon-link-animasi {
+  0% {
+    transform: translateX(-100vmax);
+    opacity: -2;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: -2;
+  }
+}
+
 /* About end */
 
 /* Contact page */
@@ -190,11 +246,18 @@ html {
 /* Contact end */
 
 /* Catalog page */
+
 .catalog-content {
   background-color: #ffff;
   height: 100vh;
   min-height: 100vh;
+  width: 100%;
   position: relative;
+}
+
+.catalog-content img {
+  height: 350px;
+  inset: 0;
 }
 /* Catalog end */
 
