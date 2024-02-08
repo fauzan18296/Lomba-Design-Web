@@ -256,9 +256,10 @@ html {
 }
 
 .catalog-content img {
-  height: 350px;
+  height: 480px;
   inset: 0;
 }
+
 /* Catalog end */
 
 @media screen and (max-width: 1366px) {
