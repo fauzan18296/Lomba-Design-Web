@@ -257,6 +257,7 @@ html {
 
 .catalog-content img {
   height: 480px;
+  width: 100%;
   inset: 0;
 }
 
