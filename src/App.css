@@ -73,14 +73,16 @@ html {
   height: 100vh;
 }
 
+
+
 .luxury {
   text-shadow: #222;
-  font-size: 5vmax;
+  font-size: 1.2em;
 }
 
 .fashion {
   font-family: var(--font-family-latin);
-  font-size: 6vmax;
+  font-size: 1.3em;
 }
 
 .list-category {
@@ -261,15 +263,19 @@ html {
 
 .catalog-content .list-price {
   background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+}
+
+.catalog-content .list-price .price {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   flex-direction: column;
-  height: 110px;
-  width: 340px;
-  margin-top: 340px;
-  position: absolute;
+  height: 100px;
 }
 
 /* Catalog end */

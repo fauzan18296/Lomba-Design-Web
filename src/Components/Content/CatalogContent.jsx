@@ -22,9 +22,10 @@ const CatalogContent = () => {
             <img src={fashionKids1} alt="fashion-kids" />
            <div className="list-price">
             <div className="price">
-            Rp150.000</div>
+            Rp150.000
             <div className="btn-buy">
               <button>Buy</button>
+              </div>
             </div>
            </div>
           </Col>
