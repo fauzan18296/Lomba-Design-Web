@@ -272,10 +272,6 @@ html {
   position: absolute;
 }
 
-.contact-page .list-price:hover {
-display: flex;
-}
-
 /* Catalog end */
 
 @media screen and (max-width: 1366px) {

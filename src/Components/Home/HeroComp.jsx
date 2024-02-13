@@ -17,7 +17,7 @@ const HeroSection = () => {
             className="fs-1 d-flex align-items-center"
             style={{
               letterSpacing: "1px",
-              lineHeight: "50px",
+              lineHeight: "100px",
             }}
           >
             <Row>
@@ -99,7 +99,7 @@ const HeroSection = () => {
             className="fs-1 d-flex align-items-center"
             style={{
               letterSpacing: "1px",
-              lineHeight: "50px",
+              lineHeight: "100px",
             }}
           >
             <Row>
