@@ -20,6 +20,13 @@ const CatalogContent = () => {
         >
           <Col className="d-flex justify-content-center   ">
             <img src={fashionKids1} alt="fashion-kids" />
+           <div className="list-price">
+            <div className="price">
+            Rp150.000</div>
+            <div className="btn-buy">
+              <button>Buy</button>
+            </div>
+           </div>
           </Col>
           <Col className="d-flex justify-content-center  ">
             <img src={fashionKids2} alt="fashion-kids" />
