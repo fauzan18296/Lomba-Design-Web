@@ -18,7 +18,7 @@ const CatalogContent = () => {
           className="d-flex justify-content-center align-items-center
          row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 gy-5 pt-2 pb-5"
         >
-          <Col className="d-flex justify-content-center   ">
+          <Col className="d-flex justify-content-center list-category1">
             <img src={fashionKids1} alt="fashion-kids" />
            <div className="list-price">
             <div className="price">
@@ -29,20 +29,64 @@ const CatalogContent = () => {
             </div>
            </div>
           </Col>
-          <Col className="d-flex justify-content-center  ">
+
+          <Col className="d-flex justify-content-center list-category2">
             <img src={fashionKids2} alt="fashion-kids" />
+            <div className="list-price">
+            <div className="price">
+            Rp150.000
+            <div className="btn-buy">
+              <button>Buy</button>
+              </div>
+            </div>
+           </div>
           </Col>
-          <Col className="d-flex justify-content-center  ">
+
+          <Col className="d-flex justify-content-center list-category3 ">
             <img src={fashionKids3} alt="fashion-kids" />
+            <div className="list-price">
+            <div className="price">
+            Rp150.000
+            <div className="btn-buy">
+              <button>Buy</button>
+              </div>
+            </div>
+           </div>
           </Col>
-          <Col className="d-flex justify-content-center   ">
+
+          <Col className="d-flex justify-content-center list-category4 ">
             <img src={fashionKids4} alt="fashion-kids" />
+            <div className="list-price">
+            <div className="price">
+            Rp150.000
+            <div className="btn-buy">
+              <button>Buy</button>
+              </div>
+            </div>
+           </div>
           </Col>
-          <Col className="d-flex justify-content-center  ">
+
+          <Col className="d-flex justify-content-center list-category5 ">
             <img src={fashionKids5} alt="fashion-kids" />
+             <div className="list-price">
+            <div className="price">
+            Rp150.000
+            <div className="btn-buy">
+              <button>Buy</button>
+              </div>
+            </div>
+           </div>
           </Col>
-          <Col className="d-flex justify-content-center   ">
+          <Col className="d-flex justify-content-center list-category6 ">
             <img src={fashionKids6} alt="fashion-kids" />
+            <div className="list-price">
+            <div className="price">
+            Rp150.000
+            <div className="btn-buy">
+              <button>Buy</button>
+              </div>
+            </div>
+           </div>
           </Col>
         </Row>
       </Container>

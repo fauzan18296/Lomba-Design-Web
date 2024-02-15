@@ -77,12 +77,12 @@ html {
 
 .luxury {
   text-shadow: #222;
-  font-size: 1.2em;
+  
 }
 
 .fashion {
   font-family: var(--font-family-latin);
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .list-category {
@@ -261,15 +261,68 @@ html {
   height: 450px;
 }
 
-.catalog-content .list-price {
+
+.catalog-content .list-category1 .list-price {
   background-color: #2229;
   height: 110px;
   width: 340px;
   margin-top: 340px;
   position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
 }
 
-.catalog-content .list-price .price {
+.catalog-content .list-category2 .list-price {
+  background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.catalog-content .list-category3 .list-price {
+  background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.catalog-content .list-category4 .list-price {
+  background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.catalog-content .list-category5 .list-price {
+  background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.catalog-content .list-category6 .list-price {
+  background-color: #2229;
+  height: 110px;
+  width: 340px;
+  margin-top: 340px;
+  position:absolute;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.catalog-content .list-category1 .list-price .price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,6 +330,102 @@ html {
   flex-direction: column;
   height: 100px;
 }
+
+.catalog-content .list-category2 .list-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100px;
+}
+
+.catalog-content .list-category3 .list-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100px;
+}
+
+.catalog-content .list-category4 .list-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100px;
+}
+
+.catalog-content .list-category5 .list-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100px;
+}
+
+.catalog-content .list-category6 .list-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100px;
+}
+
+.catalog-content .list-category1:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category1:active .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category2:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category2:active .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category3:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category3:active .list-price{
+  opacity: 1;
+}
+.catalog-content .list-category4:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category4:active .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category5:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category5:active .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category6:hover .list-price{
+  opacity: 1;
+}
+
+.catalog-content .list-category6:active .list-price{
+  opacity: 1;
+}
+
+
+
+
 
 /* Catalog end */
 
