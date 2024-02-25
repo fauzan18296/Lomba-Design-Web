@@ -23,7 +23,7 @@ const HeroSection = () => {
             <Row>
               <Col className="fs-1 ms-1 contain">
                 <div
-                  className="text-uppercase luxury"
+                  className="text-uppercase luxury pb-2"
                   style={{
                     color: "#9C881E",
                     fontSize: "1.4em",
@@ -39,7 +39,7 @@ const HeroSection = () => {
                   </p>
                 </div>
                 <div
-                  className="text-capitalize ms-5 fashion"
+                  className="text-capitalize ms-5 fashion ps-3"
                   style={{
                     fontSize: "1.7em",
                   }}
@@ -62,9 +62,9 @@ const HeroSection = () => {
             }}
           >
             <Row>
-              <Col className="fs-1 ms-1 contain">
+              <Col className="fs-1 ms-1 contain ">
                 <div
-                  className="text-uppercase luxury"
+                  className="text-uppercase luxury  pb-2"
                   style={{
                     color: "#9C881E",
                     fontSize: "1.4em",
@@ -80,7 +80,7 @@ const HeroSection = () => {
                   </p>
                 </div>
                 <div
-                  className="text-capitalize ms-5 fashion"
+                  className="text-capitalize ms-5 fashion ps-3"
                   style={{
                     fontSize: "1.7em",
                   }}
@@ -105,7 +105,7 @@ const HeroSection = () => {
             <Row>
               <Col className="fs-1 ms-1 contain">
                 <div
-                  className="text-uppercase luxury"
+                  className="text-uppercase luxury  pb-2"
                   style={{
                     color: "#9C881E",
                     fontSize: "1.4em",
@@ -121,7 +121,7 @@ const HeroSection = () => {
                   </p>
                 </div>
                 <div
-                  className="text-capitalize ms-5 fashion"
+                  className="text-capitalize ms-5 fashion ps-3"
                   style={{
                     fontSize: "1.7em",
                   }}
